@@ -1,12 +1,10 @@
 let string = '!!!hi!'
-let number = 2
-
+let number = +prompt('son kriting')
 function exclamation(str, num) {
-
-    for (let i = 0; i < str.length; i++) {
-        let newSTR = str.replace('!', '');
-        console.log(newSTR);
+    let newSTR = str
+    for (let i = 0; i < num; i++) {
+        newSTR = newSTR.replace('!', '');
     }
+    console.log(newSTR);
 }
 exclamation(string, number)
-
